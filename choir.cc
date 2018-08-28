@@ -25,8 +25,8 @@ int main() {
 
     long long maxtemp[k][n];
     long long mintemp[k][n];
-    memset(maxtemp, LONG_LONG_MIN, sizeof(long long) * k * n);
-    memset(mintemp, LONG_LONG_MAX, sizeof(long long) * k * n);
+    memset(maxtemp, 0, sizeof(long long) * k * n);
+    memset(mintemp, 0, sizeof(long long) * k * n);
     for(int j = 0;j < n;j++) {
         maxtemp[0][j] = power[j];
         mintemp[0][j] = power[j];

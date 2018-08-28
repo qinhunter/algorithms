@@ -14,7 +14,9 @@ bool checksame(const string& s1, const string& s2) {
 
 	int i = 0;
 	int j = 0;
-	while(i < s1)
+	while(i < size1) {
+
+	}
 
 	return true;
 }
