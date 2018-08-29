@@ -69,7 +69,7 @@ public:
     }
 };
 
-class Solution {
+class Solution2 {
     void dfs(const string &s, int pos, vector<vector<bool>> &dp, vector<string> &cur, vector<vector<string>> &res) {
         if(pos == s.size()){
             res.push_back(cur);
@@ -105,8 +105,8 @@ public:
 
 
 int main(int argc, char* argv[]) {
-    Solution sol;
-    vector<vector<string>> ans = sol.partition("aab");
+    Solution2 sol;
+    vector<vector<string>> ans = sol.partition("aasoidfasdobbabbaabababbababaabab");
     for(int i = 0;i < ans.size();i++) {
         for(int j = 0;j < ans[i].size();j++) {
             cout << ans[i][j] << " ";
