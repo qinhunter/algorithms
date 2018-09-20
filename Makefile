@@ -1,5 +1,5 @@
 .PHONY:all
-all: 131.o watercup.o 264.ugly_number2.o
+all: 131.o watercup.o 264.ugly_number2.o 300.Longest_Increasing_Subsequence.o
 
 .PHONY:clean
 clean:
@@ -13,3 +13,6 @@ watercup.o:WaterCup.cc
 
 264.ugly_number2.o:264.ugly_number2.cc
 	@g++ -o $@ 264.ugly_number2.cc -std=c++11
+
+300.Longest_Increasing_Subsequence.o:300.Longest_Increasing_Subsequence.cc
+	@g++ -o $@ 300.Longest_Increasing_Subsequence.cc -std=c++11
