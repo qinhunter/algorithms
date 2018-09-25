@@ -42,14 +42,34 @@ public:
             return 0;
         }
         vector<int> LIS;
-        for(int i = 0; i < n; i++){
-            vector<int>::iterator it = lower_bound(LIS.begin(), LIS.end(), nums[i]);
-            if(it != LIS.end()){
-                *it = nums[i];
-            } else {
-                LIS.push_back(nums[i]);
-            }
-        }
+        // for(int i = 0; i < n; i++){
+        //     vector<int>::iterator it = lower_bound(LIS.begin(), LIS.end(), nums[i]);
+        //     if(it != LIS.end()){
+        //         *it = nums[i];
+        //     } else {
+        //         LIS.push_back(nums[i]);
+        //     }
+        // }
+		LIS.push_back(nums[0]);
+		for(int i = 1;i < n;i++) {
+			if(LIS.back() < nums[i]) {
+				LIS.push_back(nums[i]);
+				continue;
+			}
+			int left = 0;
+			int right = LIS.size() - 1;
+			int mid = 0;
+
+			while(left <= right) {
+				mid = (left + right) / 2;
+				if(nums[i] <= LIS[mid]) {
+					right = mid - 1;
+				} else {//nums[i] > LIS[mid]
+					left = mid + 1;
+				}
+			}
+			LIS[left] = nums[i];
+		}
         return LIS.size();
     }
 };
