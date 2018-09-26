@@ -1,5 +1,5 @@
 .PHONY:all
-all: 131.o watercup.o 264.ugly_number2.o 300.Longest_Increasing_Subsequence.o
+all: 131.o watercup.o 264.ugly_number2.o 300.Longest_Increasing_Subsequence.o splitstring.o 301.Remove_Invlid_Parentheses.o
 
 .PHONY:clean
 clean:
@@ -16,3 +16,9 @@ watercup.o:WaterCup.cc
 
 300.Longest_Increasing_Subsequence.o:300.Longest_Increasing_Subsequence.cc
 	@g++ -o $@ 300.Longest_Increasing_Subsequence.cc -std=c++11
+
+splitstring.o:splitstring.cc
+	@g++ -o $@ splitstring.cc -std=c++11
+
+301.Remove_Invlid_Parentheses.o:301.Remove_Invlid_Parentheses.cc
+	@g++ -o $@ 301.Remove_Invlid_Parentheses.cc -std=c++11
