@@ -1,2 +1,2 @@
 # algorithms
-some algorithms/problems on leetcode/niuke
+some algorithms/problems on leetcode/nowcoder
