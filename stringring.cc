@@ -4,7 +4,7 @@
 #include <limits.h>
 
 using namespace std;
-
+//KMP is a good way but is hard to realize
 bool checksame(const string& s1, const string& s2) {
 	int size1 = s1.size();
 	int size2 = s2.size();
