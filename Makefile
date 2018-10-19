@@ -1,5 +1,5 @@
 .PHONY:all
-all: 131.o watercup.o 264.ugly_number2.o 300.Longest_Increasing_Subsequence.o splitstring.o 301.Remove_Invalid_Parentheses.o 199.Binary_Tree_Right_Side_View.o 200.Number_of_Islands.o 329.Longest_Increasing_Path_in_a_Matrix.o 337.House_Robber_III.o 354.Russian_doll_envelopes.o choir.o
+all: 131.o watercup.o 264.ugly_number2.o 300.Longest_Increasing_Subsequence.o splitstring.o 301.Remove_Invalid_Parentheses.o 199.Binary_Tree_Right_Side_View.o 200.Number_of_Islands.o 329.Longest_Increasing_Path_in_a_Matrix.o 337.House_Robber_III.o 354.Russian_doll_envelopes.o choir.o 479.Largest_Palindrome_Product.o
 
 .PHONY:clean
 clean:
@@ -53,3 +53,7 @@ splitstring.o:splitstring.cc
 337.House_Robber_III.o:337.House_Robber_III.cc
 	@echo "g++ -o $@ 337.House_Robber_III.cc -std=c++11"
 	@g++ -o $@ 337.House_Robber_III.cc -std=c++11
+
+479.Largest_Palindrome_Product.o:479.Largest_Palindrome_Product.cc
+	@echo "g++ -o $@ 479.Largest_Palindrome_Product.cc -std=c++11"
+	@g++ -o $@ 479.Largest_Palindrome_Product.cc -std=c++11
