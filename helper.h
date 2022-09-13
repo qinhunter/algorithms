@@ -15,3 +15,7 @@ void print_vec_vec(const std::vector<std::vector<T>> vecs) {
         print_vec(vec);
     }
 }
+
+void binary_print(int num) {
+    std::cout << bitset<sizeof(num)*8>(num) << std::endl;
+}
